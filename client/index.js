@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:5000";
+const baseURL = "http://localhost:5500";
 
 const showComputers = document.querySelector("#computerDisplay");
 
