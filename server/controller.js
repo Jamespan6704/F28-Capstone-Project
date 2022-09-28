@@ -1,41 +1,42 @@
-const data = require("./db.json");
-const idNum = 2;
+const computers = require("./db.json");
+const computerId = 4;
 //REST METHODS
 //Get, Post, Delete, Push
 
 module.exports = {
-  dataType: (req, res) => {
-    res.status(200).send(data);
+  getComputer: (req, res) => {
+    res.status(200).send(computers);
   },
+  // addPart: (req, res) => {
+  //   const { name, picture, specifications, price } = req.body;
 
-  addData: (req, res) => {
-    const { Input, Data } = req.body;
-
-    let newArray = {
-      id: idNum,
-      name: "string",
-    };
-    idNum++;
-    data.push(newArray);
-    res.status(200).send(data);
-  },
-  deleteData: (req, res) => {
-    const index = data.findIndex((el) => el.id === +req.params.id);
+  //   let newPart = {
+  //     id: computerId,
+  //     name: name,
+  //     picture: picture,
+  //     specifications: specifications,
+  //     price: 0,
+  //   };
+  //   computers.push(newPart);
+  //   computerId++;
+  //   res.status(200).send(computers);
+  // },
+  deletePart: (req, res) => {
+    const index = computers.findIndex((el) => el.id === +req.params.id);
 
     data.splice(index, 1);
 
-    res.status(200).send(data);
+    res.status(200).send(computers);
   },
   updateData: (req, res) => {
-    const index = data.findIndex(el => el.id === +req.params.body)
-    const {data} req.body
+    const index = data.findIndex((el) => el.id === +req.params.body);
+    const { part } = req.body;
 
-    if(data === 'like'){
-        data[index].likes++
-    }else if(data === 'dislike'){
-        data[index].likes--
+    if (part === String) {
+      computers[index].specifications.push(part);
+    } else {
+      console.log("Error, this is not a part");
     }
-
-    res.status(200).send(data)
-  }
+    res.status(200).send(data);
+  },
 };

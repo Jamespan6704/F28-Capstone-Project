@@ -1,7 +1,23 @@
 [
   {
     "id": 1,
-    "Input Data Here": "String Data",
-    "Input Data": "String Data"
+    "name": "OverKill PC",
+    "picture": "asdf.jpg",
+    "specifications": "i9-12900k, 3090ti, 64gb ram",
+    "price": 3259
+  },
+  {
+    "id": 2,
+    "name": "Ultimate PC",
+    "picture": "asdf.jpg",
+    "specifications": "Ryzen 9 3950x, 3090, 32gb ram",
+    "price": 2899
+  },
+  {
+    "id": 3,
+    "name": "Console Killer",
+    "picture": "asdf.jpg",
+    "specifications": "i7-10700k, 3060ti, 16gb ram",
+    "price": 1200
   }
 ]
