@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "OverKill PC",
-    "picture": "asdf.jpg",
+    "picture": "../client/background.jpg.jpg",
     "specifications": "i9-12900k, 3090ti, 64gb ram",
     "price": 3259
   },
