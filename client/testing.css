@@ -1,39 +1,32 @@
-.header {
-  min-height: 100vh;
-  width: 100%;
-  background-image:
-    url("background.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
+.3_15 { 
+	overflow:hidden;
 }
-
 .e3_15 { 
 	background-color:rgba(255, 255, 255, 1);
 	width:1440px;
 	height:1024px;
 	position:absolute;
 }
-.titleName { 
-  box-shadow: 0px 4px 10px rgba(80.64375668764114, 169.79173064231873, 219.93750303983688, 0.25);
-	color: rgba(255, 0, 0, 1);
-	width: 590px;
-	height: 99px;
-	position: absolute;
-	left: 102px;
-	top: 51px;
-	font-family: Megrim;
-	text-align: left;
-	font-size: 48px;
-	letter-spacing: 0;
+.e3_16 { 
+	background-color:rgba(0, 0, 0, 1);
+	width:1440px;
+	height:150px;
+	position:absolute;
+	left:0px;
+	top:0px;
 }
-.headerBar { 
-  background-color:rgba(0, 0, 0, 1);
-  width:1440px;
-  height:150px;
-  position:absolute;
-  left:0px;
-  top:0px;
+.e3_17 { 
+	box-shadow:0px 4px 10px rgba(80.64375668764114, 169.79173064231873, 219.93750303983688, 0.25);
+	color:rgba(255, 0, 0, 1);
+	width:590px;
+	height:99px;
+	position:absolute;
+	left:102px;
+	top:51px;
+	font-family:Megrim;
+	text-align:left;
+	font-size:48px;
+	letter-spacing:0;
 }
 .e3_18 { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
