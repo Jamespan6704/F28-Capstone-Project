@@ -30,6 +30,7 @@ const createComputerCard = (computers) => {
   computerCard.classList.add("computer-card");
 
   computerCard.innerHTML = `<img src=${computers.picture} alt='Computer image'/>
+ 
   <p>${computers.name}</p>
   <p>${computers.specifications}</p>
   <p>${computers.price}</p>
@@ -37,10 +38,11 @@ const createComputerCard = (computers) => {
 
  `;
   showComputers.appendChild(computerCard);
+  document.createElement("input");
 };
 
 const deletePart = (id) => {
-  axios.delete(`${baseURL}/${id}`).then((res) => {
+  axios.delete(`${baseURL}/computer/${id}`).then((res) => {
     showComputers.innerHTML = "";
     displayComputers(res.data);
   });
