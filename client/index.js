@@ -48,4 +48,11 @@ const deletePart = (id) => {
   });
 };
 
+const updatePart = (id) => {
+  axios.put(`${baseURL}/computer/${id}`).then((res) => {
+    showComputers.innerHTML = "";
+    displayComputers(res.data);
+  });
+};
+
 getAllComputers();

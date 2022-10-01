@@ -36,6 +36,7 @@ nav img {
   display: inline-block;
   padding: 8px 12px;
   position: relative;
+  z-index: 10;
 }
 
 .nav-links ul li a {
@@ -66,6 +67,7 @@ nav img {
   transform: translate(-60%, -50%);
   text-align: center;
   /* text-shadow: #f51000; */
+  z-index: 7;
 }
 
 .title h1 {
@@ -76,6 +78,7 @@ nav img {
   margin: 10px 0 40px;
   font-size: 14px;
   color: black;
+  z-index: 8;
 }
 
 .contactBtn {
@@ -94,4 +97,15 @@ nav img {
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   transition: 0.3s;
+}
+
+#logo {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 700px) {
+  .title h1 {
+    font-size: 20px;
+  }
 }
