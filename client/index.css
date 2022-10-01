@@ -108,4 +108,39 @@ nav img {
   .title h1 {
     font-size: 20px;
   }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: red;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+}
+
+/* computers */
+
+.showComputers {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.showComputers h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.showComputers p {
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
 }
