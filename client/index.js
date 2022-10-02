@@ -34,11 +34,10 @@ const createComputerCard = (computers) => {
   <p>${computers.name}</p>
   <p>${computers.specifications}</p>
   <p>${computers.price}</p>
-    <button onclick="deletePart(${computers.id})">Remove</button>
+    <button onclick="deletePart(${computers.id})">Remove Computer</button>
 
  `;
   showComputers.appendChild(computerCard);
-  document.createElement("input");
 };
 
 const deletePart = (id) => {

@@ -62,7 +62,7 @@ nav img {
   width: 100%;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 15%;
+  top: 13%;
   left: 40%;
   transform: translate(-60%, -50%);
   text-align: center;
@@ -71,7 +71,7 @@ nav img {
 }
 
 .title h1 {
-  font-size: 40px;
+  font-size: 45px;
   text-shadow: 2px 4px 5px red;
 }
 
@@ -140,7 +140,7 @@ nav img {
 }
 
 .showComputers p {
-  color: rgb(15, 15, 15);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 300;
   line-height: 22px;
@@ -149,9 +149,13 @@ nav img {
 
 .computerSel {
   flex-basis: 30%;
-  background:rgb(0, 0, 0);
+  background: rgb(243, 15, 15);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
+}
+
+#overkill {
+  width: 100px;
 }
