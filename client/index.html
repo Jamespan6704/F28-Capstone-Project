@@ -14,7 +14,8 @@
     />
   </head>
   <body>
-    <section class="header">
+
+    <header class="header">
       <div class="title">
         <h1>Synergy Computers</h1>
         <p>Create and build the PC of your dreams</p>
@@ -36,7 +37,6 @@
         <p>
           Choose between our Greatest Selection of Computers, or build your own!
         </p>
-
         <div class="row">
           <div class="computerSel">
             <h3>OverKill</h3>
@@ -56,7 +56,7 @@
         </div>
 
         <!-- Input your own computer -->
-        <div class="inputComp">
+        <form class="inputComp" id="newCompForm">
           <input type="textbox" name="name" id="firstBox" />Name
           <input
             type="textbox"
@@ -64,8 +64,8 @@
             id="secondBox"
           />Specifications
           <input type="textbox" name="price" id="thirdBox" />price
-          <input type="submit" name="submit" id="submit" />
-        </div>
+          <button type="submit">Submit</button>
+        </form>
 
         <!-- testimonial -->
 
@@ -77,8 +77,11 @@
             <div class="testimonial-col"></div>
           </div>
         </section>
+
+        <!-- Database Display -->
+        <div id="computerDisplay"></div>
       </section>
-      <header></header>
+      </header>
       <main></main>
     </section>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

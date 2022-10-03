@@ -20,6 +20,7 @@ const getAllComputers = () => {
 };
 
 const displayComputers = (arr) => {
+  showComputers.innerHTML = "";
   for (let i = 0; i < arr.length; i++) {
     createComputerCard(arr[i]);
   }
@@ -49,9 +50,30 @@ const deletePart = (id) => {
 
 const updatePart = (id) => {
   axios.put(`${baseURL}/computer/${id}`).then((res) => {
-    showComputers.innerHTML = "";
     displayComputers(res.data);
   });
 };
 
+const addComputer = (event) => {
+  event.preventDefault();
+  let newComputerName = document.getElementById("firstBox");
+  let newComputerSpecs = document.getElementById("secondBox");
+  let newComputerPrice = document.getElementById("thirdBox");
+
+  let newPart = {
+    name: newComputerName.value,
+    // picture: picture,
+    specifications: newComputerSpecs.value,
+    price: newComputerPrice.value,
+  };
+
+  axios.post(`${baseURL}/computer`, newPart).then((res) => {
+    displayComputers(res.data);
+    newComputerName.value = "";
+    newComputerSpecs.value = "";
+    newComputerPrice.value = "";
+  });
+};
+
+document.querySelector("#newCompForm").addEventListener("submit", addComputer);
 getAllComputers();

@@ -62,7 +62,7 @@ nav img {
   width: 100%;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 13%;
+  top: 8%;
   left: 40%;
   transform: translate(-60%, -50%);
   text-align: center;
@@ -86,7 +86,7 @@ nav img {
   display: inline-block;
   text-decoration: none;
   color: black;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 12px 34px;
   font-size: 13px;
   background: transparent;
