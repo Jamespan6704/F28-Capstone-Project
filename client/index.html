@@ -24,7 +24,7 @@
         <a id="logo" href="index.html"><img src="logo.png" /></a>
         <div class="nav-links">
           <ul>
-            <li><a href="./home.html">HOME</a></li>
+            <li><a href="./index.html">HOME</a></li>
             <li><a href="./products.html">PRODUCTS</a></li>
             <li><a href="">COMMUNITY</a></li>
             <li><a href="">COMPANY</a></li>
@@ -36,31 +36,49 @@
         <p>
           Choose between our Greatest Selection of Computers, or build your own!
         </p>
-        <div id="overkill">
-          <img src="overkill.png" alt="overkill pc" />
-        </div>
 
         <div class="row">
           <div class="computerSel">
             <h3>OverKill</h3>
             <p>i9-12900k, 3090ti, 64gb ram</p>
+            <img src="overkill.png" alt="overkillpc" />
           </div>
           <div class="computerSel">
             <h3>Ultimate</h3>
             <p>Ryzen 9 3950x, 3090, 32gb ram</p>
+            <img src="ultimate.jpg" alt="ultimatepc" />
           </div>
           <div class="computerSel">
             <h3>Console Killer</h3>
             <p>i7-10700k, 3060ti, 16gb ram</p>
+            <img src="console.jpg" alt="consolekiller" />
           </div>
         </div>
-        <div class="inputComp"><input type="textbox" /></div>
-      </section>
-      <header>
-        <div class="computerDisplay">
-          <input type="text" name="Build your own" id="buildComp" />
+
+        <!-- Input your own computer -->
+        <div class="inputComp">
+          <input type="textbox" name="name" id="firstBox" />Name
+          <input
+            type="textbox"
+            name="specifications"
+            id="secondBox"
+          />Specifications
+          <input type="textbox" name="price" id="thirdBox" />price
+          <input type="submit" name="submit" id="submit" />
         </div>
-      </header>
+
+        <!-- testimonial -->
+
+        <section class="testimonials">
+          <h1>Reviews</h1>
+          <p>lorem ipsum</p>
+
+          <div class="row">
+            <div class="testimonial-col"></div>
+          </div>
+        </section>
+      </section>
+      <header></header>
       <main></main>
     </section>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
