@@ -22,8 +22,8 @@ nav {
 }
 
 nav img {
-  width: 125px;
-  padding-top: 10%;
+  width: 20%;
+  padding-top: 5%;
 }
 
 .nav-links {
@@ -62,16 +62,15 @@ nav img {
   width: 100%;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 8%;
+  top: 15%;
   left: 40%;
   transform: translate(-60%, -50%);
   text-align: center;
-  /* text-shadow: #f51000; */
   z-index: 7;
 }
 
 .title h1 {
-  font-size: 45px;
+  font-size: 40px;
   text-shadow: 2px 4px 5px red;
 }
 
@@ -134,7 +133,7 @@ nav img {
 }
 
 .showComputers h1 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 600;
   text-shadow: 3px 3px 3px rgb(93, 70, 70);
 }
@@ -231,7 +230,8 @@ nav img {
 .testimonial-col {
   flex-basis: 44%;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-top: 5%;
+
   text-align: left;
   background: #fff3f3;
   padding: 25px;
@@ -261,12 +261,10 @@ nav img {
 }
 
 .contactForm {
-  flex-basis: 44%;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 5%;
-  text-align: left;
   background: #fff3f3;
-  padding: 25px;
-  cursor: pointer;
+  padding: 10px;
   display: flex;
+  justify-content: space-between;
 }
