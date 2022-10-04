@@ -177,7 +177,27 @@ nav img {
 }
 
 .inputComp {
-  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+.inputComp button {
+  width: 20%;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.inputComp button:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 
 .row {
@@ -190,4 +210,63 @@ nav img {
   .row {
     flex-direction: column;
   }
+}
+
+/* testimonials */
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+
+}
+
+.testimonials h1 {
+  font-size: 36px;
+  text-shadow: 3px 3px 3px rgb(93, 70, 70);
+  margin-bottom: 7%;
+
+}
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col img{
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+
+}
+
+.testimonial-col p {
+  padding: 0%;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonial-col fa-solid {
+  color: black;
+}
+
+.contactForm {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
 }

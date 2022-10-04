@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,14 +15,20 @@
     />
   </head>
   <body>
-    <section class="header">
+
+    <header class="header">
+      <div class="title">
+        <h1>Synergy Computers</h1>
+        <p>Create and build the PC of your dreams</p>
+        <a href="./contact.html" class="contactBtn">Contact Us</a>
+      </div>
       <nav>
         <a id="logo" href="index.html"><img src="logo.png" /></a>
         <div class="nav-links">
           <ul>
             <li><a href="./index.html">HOME</a></li>
             <li><a href="./products.html">PRODUCTS</a></li>
-            <li><a href="">COMMUNITY</a></li>
+            <li><a href="./community.html">COMMUNITY</a></li>
             <li><a href="">COMPANY</a></li>
           </ul>
         </div>
@@ -31,23 +38,21 @@
         <p>
           Choose between our Greatest Selection of Computers, or build your own!
         </p>
-        <div class="row">
-          <div class="computerSel">
-            <h3>OverKill</h3>
-            <p>i9-12900k, 3090ti, 64gb ram</p>
-          </div>
-          <div class="computerSel">
-            <h3>Ultimate</h3>
-            <p>Ryzen 9 3950x, 3090, 32gb ram</p>
-          </div>
-          <div class="computerSel">
-            <h3>Console Killer</h3>
-            <p>i7-10700k, 3060ti, 16gb ram</p>
-          </div>
-        </div>
-        <div class="inputComp"><input type="textbox" /></div>
+        <div class="computerDisplay">
+            <form class="inputComp" id="newCompForm">
+               <input type="textbox" name="name" id="firstBox" />Name
+               <input
+                 type="textbox"
+                 name="specifications"
+                 id="secondBox"
+               />Specifications
+               <input type="textbox" name="price" id="thirdBox" />price
+               <input type="textbox" name="image" id="imageURL" />Image URL
+               <button type="submit">Submit</button>
+             </form>
+           </div>
       </section>
-      <header></header>
+      </header>
       <main></main>
     </section>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

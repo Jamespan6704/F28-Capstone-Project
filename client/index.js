@@ -1,6 +1,6 @@
 const baseURL = "http://localhost:5500";
 
-const showComputers = document.querySelector("#computerDisplay");
+const showComputers = document.querySelector(".computerDisplay");
 
 //axios request to get data array
 //Loop over the array
@@ -59,12 +59,13 @@ const addComputer = (event) => {
   let newComputerName = document.getElementById("firstBox");
   let newComputerSpecs = document.getElementById("secondBox");
   let newComputerPrice = document.getElementById("thirdBox");
+  let newComputerImage = document.getElementById('imageURL')
 
   let newPart = {
     name: newComputerName.value,
-    // picture: picture,
+    picture: newComputerImage.value,
     specifications: newComputerSpecs.value,
-    price: newComputerPrice.value,
+    price: newComputerPrice.value
   };
 
   axios.post(`${baseURL}/computer`, newPart).then((res) => {
@@ -72,6 +73,8 @@ const addComputer = (event) => {
     newComputerName.value = "";
     newComputerSpecs.value = "";
     newComputerPrice.value = "";
+    newComputerImage.value = ''
+
   });
 };
 
