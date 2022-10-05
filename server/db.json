@@ -9,14 +9,14 @@
   {
     "id": 2,
     "name": "Ultimate PC",
-    "picture": "asdf.jpg",
+    "picture": "ultimate.jpg",
     "specifications": "Ryzen 9 3950x, 3090, 32gb ram",
     "price": 2899
   },
   {
     "id": 3,
     "name": "Console Killer",
-    "picture": "asdf.jpg",
+    "picture": "console.jpg",
     "specifications": "i7-10700k, 3060ti, 16gb ram",
     "price": 1200
   }

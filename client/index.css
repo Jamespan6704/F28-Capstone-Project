@@ -268,3 +268,12 @@ nav img {
   display: flex;
   justify-content: space-between;
 }
+
+.computer-card {
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: row;
+}

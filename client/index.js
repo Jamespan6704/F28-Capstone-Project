@@ -34,7 +34,7 @@ const createComputerCard = (computers) => {
  
   <p>${computers.name}</p>
   <p>${computers.specifications}</p>
-  <p>${computers.price}</p>
+  <p>Price</p><p>${computers.price}</p>
     <button onclick="deletePart(${computers.id})">Remove Computer</button>
 
  `;
