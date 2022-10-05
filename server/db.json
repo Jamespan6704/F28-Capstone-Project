@@ -19,5 +19,19 @@
     "picture": "console.jpg",
     "specifications": "i7-10700k, 3060ti, 16gb ram",
     "price": 1200
+  },
+  {
+    "id": 4,
+    "name": "Console Killer",
+    "picture": "console.jpg",
+    "specifications": "i7-10700k, 3060ti, 16gb ram",
+    "price": 1200
+  },
+  {
+    "id": 5,
+    "name": "Console Killer",
+    "picture": "console.jpg",
+    "specifications": "i7-10700k, 3060ti, 16gb ram",
+    "price": 1200
   }
 ]

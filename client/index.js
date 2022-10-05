@@ -32,9 +32,9 @@ const createComputerCard = (computers) => {
 
   computerCard.innerHTML = `<img src=${computers.picture} alt='Computer image'/>
  
-  <p>${computers.name}</p>
-  <p>${computers.specifications}</p>
-  <p>Price</p><p>${computers.price}</p>
+  <h2>Name</h2><p>${computers.name}</p>
+  <h2>Specs</h2><p>${computers.specifications}</p>
+  <h2>Price</h2><p>${computers.price}</p>
     <button onclick="deletePart(${computers.id})">Remove Computer</button>
 
  `;
@@ -59,13 +59,13 @@ const addComputer = (event) => {
   let newComputerName = document.getElementById("firstBox");
   let newComputerSpecs = document.getElementById("secondBox");
   let newComputerPrice = document.getElementById("thirdBox");
-  let newComputerImage = document.getElementById('imageURL')
+  let newComputerImage = document.getElementById("imageURL");
 
   let newPart = {
     name: newComputerName.value,
     picture: newComputerImage.value,
     specifications: newComputerSpecs.value,
-    price: newComputerPrice.value
+    price: newComputerPrice.value,
   };
 
   axios.post(`${baseURL}/computer`, newPart).then((res) => {
@@ -73,8 +73,7 @@ const addComputer = (event) => {
     newComputerName.value = "";
     newComputerSpecs.value = "";
     newComputerPrice.value = "";
-    newComputerImage.value = ''
-
+    newComputerImage.value = "";
   });
 };
 
