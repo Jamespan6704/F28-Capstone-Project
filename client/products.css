@@ -283,3 +283,10 @@ nav img {
 .footer p {
   color: #3d2b2b;
 }
+.fa {
+  width: 10px;
+  color: rgb(0, 0, 0);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
