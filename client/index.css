@@ -62,7 +62,7 @@ nav img {
   width: 100%;
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 14%;
+  top: 12%;
   left: 40%;
   transform: translate(-60%, -50%);
   text-align: center;
@@ -184,7 +184,7 @@ nav img {
 .inputComp button {
   width: 20%;
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   border: 1px solid black;
   padding: 12px 34px;
   font-size: 13px;
@@ -258,6 +258,7 @@ nav img {
 }
 
 .contactForm {
+  top: 20%;
   border-radius: 5px;
   margin-bottom: 5%;
   background: #fff3f3;
@@ -282,8 +283,8 @@ nav img {
 }
 
 .footer h4 {
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 25px;
+  margin-top: 20px;
   font-weight: 600;
 }
 

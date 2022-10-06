@@ -1,135 +1,146 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  .header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.226)),
-      url("coolcomp.webp");
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  nav {
-    display: flex;
-    padding: 0% 5%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav img {
-    width: 20%;
-    padding-top: 5%;
-  }
-  
-  .nav-links {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-    z-index: 10;
-  }
-  
-  .nav-links ul li a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.226)),
+    url("coolcomp.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 0% 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 20%;
+  padding-top: 5%;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f51000;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  transform: translate(-60%, -50%);
+  text-align: center;
+  z-index: 7;
+}
+
+.title h1 {
+  font-size: 40px;
+  text-shadow: 2px 4px 5px red;
+}
+
+.title p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  z-index: 8;
+}
+
+.contactBtn {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.contactBtn:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+#logo {
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 700px) {
+  .title h1 {
     font-size: 20px;
   }
-  
-  .nav-links ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #f51000;
+  .nav-links ul li {
     display: block;
-    margin: auto;
-    transition: 0.3s;
   }
-  .nav-links ul li:hover::after {
-    width: 100%;
-  }
-  
-  .title {
-    width: 100%;
-    color: rgb(255, 255, 255);
+  .nav-links {
     position: absolute;
-    top: 15%;
-    left: 40%;
-    transform: translate(-60%, -50%);
-    text-align: center;
-    z-index: 7;
+    background: rgb(255, 0, 0);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
   }
-  
-  .title h1 {
-    font-size: 40px;
-    text-shadow: 2px 4px 5px red;
-  }
-  
-  .title p {
-    margin: 10px 0 40px;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    z-index: 8;
-  }
-  
-  .contactBtn {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .contactBtn:hover {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    transition: 0.3s;
-  }
-  
-  #logo {
-    position: relative;
-    z-index: 10;
-  }
-  
-  @media (max-width: 700px) {
-    .title h1 {
-      font-size: 20px;
-    }
-    .nav-links ul li {
-      display: block;
-    }
-    .nav-links {
-      position: absolute;
-      background: rgb(255, 0, 0);
-      height: 100vh;
-      width: 200px;
-      top: 0;
-      right: 0;
-      text-align: left;
-      z-index: 2;
-    }
-  }
+}
 
-  .titles {
-    width: 100%;
-    color: rgb(255, 255, 255);
-    position: relative;
-    top: 15%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 7;
-  }
+.titles {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.titles h1 p {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}

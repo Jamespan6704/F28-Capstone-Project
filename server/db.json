@@ -22,16 +22,9 @@
   },
   {
     "id": 4,
-    "name": "Console Killer",
-    "picture": "console.jpg",
-    "specifications": "i7-10700k, 3060ti, 16gb ram",
-    "price": 1200
-  },
-  {
-    "id": 5,
-    "name": "Console Killer",
-    "picture": "console.jpg",
-    "specifications": "i7-10700k, 3060ti, 16gb ram",
-    "price": 1200
+    "name": "One and Only",
+    "picture": "http://avadirect.azureedge.net/pictures/750/13515225_13.png",
+    "specifications": "Ryzen 9 5900X, 3070ti, 16gb ram",
+    "price": 1800
   }
 ]
