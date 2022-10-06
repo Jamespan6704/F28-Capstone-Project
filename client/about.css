@@ -61,7 +61,7 @@ nav img {
 .title {
   width: 100%;
   color: rgb(255, 255, 255);
-  position: absolute;
+  position: relative;
   top: 15%;
   left: 40%;
   transform: translate(-60%, -50%);
